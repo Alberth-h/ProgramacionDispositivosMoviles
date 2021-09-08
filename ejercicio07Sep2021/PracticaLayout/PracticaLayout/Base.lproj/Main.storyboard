@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PracticaLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pregunta 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP7-cM-LeO" userLabel="etiquetaPregunta1">
+                                <rect key="frame" x="16" y="20" width="81" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-L2-Ox8" userLabel="txtPregunta1">
+                                <rect key="frame" x="16" y="48.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pregunta 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-N5-LvA" userLabel="etiquetaPregunta2">
+                                <rect key="frame" x="16" y="86.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-ZM-qtc" userLabel="txtPregunta2">
+                                <rect key="frame" x="16" y="115" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-2S-JcT" userLabel="BotonEnviar">
+                                <rect key="frame" x="262" y="522" width="42" height="30"/>
+                                <state key="normal" title="Enviar"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-Gz-Cbx">
+                                <rect key="frame" x="16" y="220" width="288" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7m3-o0-YRS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pregunta 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmG-Q1-1Dh" userLabel="etiquetaPregunta3">
+                                <rect key="frame" x="16" y="153" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Af5-nZ-myA" userLabel="txtPregunta3">
+                                <rect key="frame" x="16" y="182" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNB-Gz-Cbx" secondAttribute="trailing" constant="16" id="2NU-FQ-JoV"/>
+                            <constraint firstItem="ddU-N5-LvA" firstAttribute="top" secondItem="ODS-L2-Ox8" secondAttribute="bottom" constant="8" id="5NZ-Ku-T5o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6bf-2S-JcT" secondAttribute="bottom" constant="16" id="7cH-ir-Rnz"/>
+                            <constraint firstItem="xNB-Gz-Cbx" firstAttribute="top" secondItem="Af5-nZ-myA" secondAttribute="bottom" constant="8" id="FOB-2k-pfG"/>
+                            <constraint firstItem="6Uh-ZM-qtc" firstAttribute="top" secondItem="ddU-N5-LvA" secondAttribute="bottom" constant="8" id="HV5-qP-zlC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODS-L2-Ox8" secondAttribute="trailing" constant="16" id="P21-Rt-Fxs"/>
+                            <constraint firstItem="OmG-Q1-1Dh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Poh-EI-cfd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Af5-nZ-myA" secondAttribute="trailing" constant="16" id="Q5y-2w-k3l"/>
+                            <constraint firstItem="Af5-nZ-myA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qbd-QP-DCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Uh-ZM-qtc" secondAttribute="trailing" constant="16" id="ZXj-EE-k3P"/>
+                            <constraint firstItem="ddU-N5-LvA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aJ0-L7-Gtc"/>
+                            <constraint firstItem="Af5-nZ-myA" firstAttribute="top" secondItem="OmG-Q1-1Dh" secondAttribute="bottom" constant="8" id="ay8-sf-HC7"/>
+                            <constraint firstItem="TP7-cM-LeO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="az0-P6-vHR"/>
+                            <constraint firstItem="OmG-Q1-1Dh" firstAttribute="top" secondItem="6Uh-ZM-qtc" secondAttribute="bottom" constant="8" id="b6W-ls-OJw"/>
+                            <constraint firstItem="TP7-cM-LeO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="biH-vS-G1j"/>
+                            <constraint firstItem="ODS-L2-Ox8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cjw-dR-D3r"/>
+                            <constraint firstItem="xNB-Gz-Cbx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eU1-yt-qjn"/>
+                            <constraint firstItem="ODS-L2-Ox8" firstAttribute="top" secondItem="TP7-cM-LeO" secondAttribute="bottom" constant="8" id="f3j-qp-xl9"/>
+                            <constraint firstItem="6Uh-ZM-qtc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fyf-Wn-9vi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddU-N5-LvA" secondAttribute="trailing" constant="16" id="laQ-HV-JFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6bf-2S-JcT" secondAttribute="trailing" constant="16" id="nhX-lt-jkb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OmG-Q1-1Dh" secondAttribute="trailing" constant="16" id="qtT-Mm-N1t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.5" y="17.95774647887324"/>
+        </scene>
+    </scenes>
+</document>
