@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practia09092021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Contenedor raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O53-3M-uKh" userLabel="Contenedor bodega">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega XY123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04S-U5-mWM">
+                                        <rect key="frame" x="122.33333333333333" y="60" width="130.66666666666669" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warehouse-2613467-2172857" translatesAutoresizingMaskIntoConstraints="NO" id="xVh-3k-tKp">
+                                        <rect key="frame" x="50" y="94" width="275" height="256"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.2090886404" blue="0.87074437390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xVh-3k-tKp" firstAttribute="leading" secondItem="O53-3M-uKh" secondAttribute="leading" constant="50" id="3NR-kh-ONO"/>
+                                    <constraint firstAttribute="trailing" secondItem="xVh-3k-tKp" secondAttribute="trailing" constant="50" id="5Ky-09-GRs"/>
+                                    <constraint firstItem="04S-U5-mWM" firstAttribute="top" secondItem="O53-3M-uKh" secondAttribute="top" constant="60" id="7UH-hu-i8h"/>
+                                    <constraint firstItem="04S-U5-mWM" firstAttribute="centerX" secondItem="O53-3M-uKh" secondAttribute="centerX" id="A4U-86-seT"/>
+                                    <constraint firstItem="xVh-3k-tKp" firstAttribute="top" secondItem="04S-U5-mWM" secondAttribute="bottom" constant="10" id="Qin-hR-ypo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTG-3Q-hPJ" userLabel="Contenedor temperatura">
+                                <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-Ga-ExH">
+                                        <rect key="frame" x="89" y="150" width="197" height="106"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="88"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istockphoto-852156476-170667a" translatesAutoresizingMaskIntoConstraints="NO" id="yrP-1C-A3Q">
+                                        <rect key="frame" x="262.66666666666669" y="0.0" width="112.33333333333331" height="121.66666666666667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.071304035670000002" green="1" blue="0.020642474229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yrP-1C-A3Q" firstAttribute="width" secondItem="TTG-3Q-hPJ" secondAttribute="width" multiplier="0.3" id="3rD-SD-SHh"/>
+                                    <constraint firstItem="X3Q-Ga-ExH" firstAttribute="centerY" secondItem="TTG-3Q-hPJ" secondAttribute="centerY" id="FhW-AA-bZ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="yrP-1C-A3Q" secondAttribute="trailing" id="H9i-lr-lWH"/>
+                                    <constraint firstItem="yrP-1C-A3Q" firstAttribute="top" secondItem="TTG-3Q-hPJ" secondAttribute="top" id="IeV-3T-1Pg"/>
+                                    <constraint firstItem="yrP-1C-A3Q" firstAttribute="height" secondItem="TTG-3Q-hPJ" secondAttribute="height" multiplier="0.3" id="NjV-SS-sbo"/>
+                                    <constraint firstItem="X3Q-Ga-ExH" firstAttribute="centerX" secondItem="TTG-3Q-hPJ" secondAttribute="centerX" id="yLU-DE-JzX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TTG-3Q-hPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Qm-gy-Lz9"/>
+                            <constraint firstAttribute="bottom" secondItem="TTG-3Q-hPJ" secondAttribute="bottom" id="3lx-Ch-N1v"/>
+                            <constraint firstItem="TTG-3Q-hPJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5XN-l7-Pdm"/>
+                            <constraint firstItem="O53-3M-uKh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mb4-ll-UFN"/>
+                            <constraint firstItem="O53-3M-uKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oqK-hM-8dz"/>
+                            <constraint firstItem="TTG-3Q-hPJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="reU-O1-Yla"/>
+                            <constraint firstItem="O53-3M-uKh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="se0-Kh-Opc"/>
+                            <constraint firstItem="O53-3M-uKh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uEp-S0-GlD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.91625615763547"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="istockphoto-852156476-170667a" width="416" height="416"/>
+        <image name="warehouse-2613467-2172857" width="256" height="256"/>
+    </resources>
+</document>
