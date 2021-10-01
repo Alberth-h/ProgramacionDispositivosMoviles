@@ -24,8 +24,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaAlumno")
-        return celda!
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaAlumno") as! CeldaAlmunoController
+        
+        celda.lblNombre.text = nombres[indexPath.row]
+        celda.lblMatricula.text = matriculas[indexPath.row]
+        celda.lblPromedio.text = promedios[indexPath.row]
+        return celda
     }
     
 
@@ -34,6 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func doTapVolver(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
