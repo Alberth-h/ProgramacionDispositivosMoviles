@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ibV-uV-hIS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista Alumnos Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ListaAlumnosController" customModule="Escuela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="View Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TBs-nN-PxU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="70" id="Jqg-fJ-wxX" customClass="CeldaAlumnoController" customModule="Escuela" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jqg-fJ-wxX" id="3H9-Dm-Akb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del alumno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-3T-z5p">
+                                                    <rect key="frame" x="20" y="11" width="149" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carrera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-hS-5YA">
+                                                    <rect key="frame" x="20" y="41" width="52" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matricula" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-TT-SBA">
+                                                    <rect key="frame" x="324" y="24.5" width="70" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hug-hS-5YA" firstAttribute="leading" secondItem="3H9-Dm-Akb" secondAttribute="leadingMargin" id="S31-H9-Rtv"/>
+                                                <constraint firstItem="zfP-TT-SBA" firstAttribute="centerY" secondItem="3H9-Dm-Akb" secondAttribute="centerY" id="U1r-0V-rmD"/>
+                                                <constraint firstItem="CZj-3T-z5p" firstAttribute="leading" secondItem="3H9-Dm-Akb" secondAttribute="leadingMargin" id="eZJ-81-cEV"/>
+                                                <constraint firstItem="CZj-3T-z5p" firstAttribute="top" secondItem="3H9-Dm-Akb" secondAttribute="topMargin" id="szM-NV-5bX"/>
+                                                <constraint firstItem="zfP-TT-SBA" firstAttribute="trailing" secondItem="3H9-Dm-Akb" secondAttribute="trailingMargin" id="usq-Sv-d7O"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Hug-hS-5YA" secondAttribute="bottom" id="xcL-ek-tjj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCarrera" destination="Hug-hS-5YA" id="gRu-hI-6hL"/>
+                                            <outlet property="lblMatricula" destination="zfP-TT-SBA" id="Cyd-h3-Ubs"/>
+                                            <outlet property="lblNombre" destination="CZj-3T-z5p" id="E7U-NE-bwX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8eY-3D-I7b"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="frR-k1-OCB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TBs-nN-PxU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5Go-Tw-Yh7"/>
+                            <constraint firstItem="TBs-nN-PxU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mr7-pm-Emt"/>
+                            <constraint firstItem="TBs-nN-PxU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rjh-rz-vM3"/>
+                            <constraint firstItem="TBs-nN-PxU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qng-tU-UWa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YrZ-T5-z5D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="62.946428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KBt-5G-073">
+            <objects>
+                <navigationController id="ibV-uV-hIS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fkg-nD-F3V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SQa-5i-Pgu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHB-VA-sd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
