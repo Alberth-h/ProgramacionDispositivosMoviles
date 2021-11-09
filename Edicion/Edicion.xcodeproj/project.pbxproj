@@ -18,6 +18,7 @@
 		3DF75B33272B68B500D74ED7 /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF75B32272B68B500D74ED7 /* Contacto.swift */; };
 		3DF75B35272B6C3F00D74ED7 /* CeldaContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF75B34272B6C3F00D74ED7 /* CeldaContactoController.swift */; };
 		F54037412732056800B8DF4A /* EditarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54037402732056800B8DF4A /* EditarContactoController.swift */; };
+		F54037432739F16300B8DF4A /* AgregarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54037422739F16300B8DF4A /* AgregarContactoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3DF75B32272B68B500D74ED7 /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
 		3DF75B34272B6C3F00D74ED7 /* CeldaContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoController.swift; sourceTree = "<group>"; };
 		F54037402732056800B8DF4A /* EditarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarContactoController.swift; sourceTree = "<group>"; };
+		F54037422739F16300B8DF4A /* AgregarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				3DF75B34272B6C3F00D74ED7 /* CeldaContactoController.swift */,
 				3DF75B06272B67B200D74ED7 /* ViewController.swift */,
 				F54037402732056800B8DF4A /* EditarContactoController.swift */,
+				F54037422739F16300B8DF4A /* AgregarContactoController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				3DF75B07272B67B200D74ED7 /* ViewController.swift in Sources */,
 				3DF75B03272B67B200D74ED7 /* AppDelegate.swift in Sources */,
 				3DF75B05272B67B200D74ED7 /* SceneDelegate.swift in Sources */,
+				F54037432739F16300B8DF4A /* AgregarContactoController.swift in Sources */,
 				F54037412732056800B8DF4A /* EditarContactoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
